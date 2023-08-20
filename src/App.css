@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+    max-width: 900px;
+    min-width: 375px;
+    margin: 0 auto;
+    display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  /* position: fixed; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  & h1 {
+    padding-left: 1rem;
+    flex-grow: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  & a:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+.profile {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-about-me {
+  width: 200px;
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10%;
+  border: 1px double #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.social {
+  color: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyright {
+  padding-top: 10px;
+  font-size: small;
 }
