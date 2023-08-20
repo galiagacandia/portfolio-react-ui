@@ -1,30 +1,22 @@
 import './App.css';
+import Navbar from "./components/Navbar";
+import {Route, Routes} from "react-router-dom";
+import AboutMe from "./pages/AboutMe";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
     <div className="App">
       <header>
         <h1>Portfolio</h1>
-        <nav>
-          <ul>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
-      <section className="profile">
-        <article className="profile-about-me">
-          <h2>I'm Grover Aliaga</h2>
-          <p>
-            A Software Developer with more than ten years of experience in Java
-            and related technologies.
-          </p>
-        </article>
-        <article>
-          <img className="profile-img" src="/photo-profile.jpg" width="400px" alt=""/>
-        </article>
-      </section>
+        <Routes>
+          <Route path="/" element={<AboutMe />}/>
+          <Route path="/portfolio" element={<Portfolio />}/>
+          <Route path="/contact" element={<Contact />}/>
+        </Routes>
       <footer>
         <section className="social">
           <ul>
