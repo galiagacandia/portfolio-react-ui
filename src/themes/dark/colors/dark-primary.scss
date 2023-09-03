@@ -1,0 +1,7 @@
+.dark-theme {
+  --primary-h: 198;
+  --primary-s: 72%;
+  --primary-l: 40%;
+  --primary-hsl: var(--primary-h), var(--primary-s), var(--primary-l);
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+}

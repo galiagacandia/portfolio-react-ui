@@ -1,4 +1,4 @@
-import './ItemSkill.css'
+import './ItemSkill.scss'
 import React from "react";
 
 const ItemSkill = (props) => {

@@ -1,0 +1,7 @@
+.default-theme {
+  --tertiary-h: 0;
+  --tertiary-s: 90%;
+  --tertiary-l: 71%;
+  --tertiary-hsl: var(--tertiary-h), var(--tertiary-s), var(--tertiary-l);
+  --tertiary: hsl(var(--tertiary-h), var(--tertiary-s), var(--tertiary-l));
+}

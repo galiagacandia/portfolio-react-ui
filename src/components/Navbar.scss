@@ -1,5 +1,4 @@
-nav {
-  color: inherit;
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,18 +12,19 @@ nav {
   }
 
   & a {
-    color: inherit;
+    color: var(--primary);
     text-decoration: none;
     padding: 10px;
   }
 
   & a:hover {
-    color: black;
-    background-color: white;
+    color: var(--tertiary);
+    background-color: var(--primary);
   }
 
   .active {
-    color: black;
-    background-color: white;
+    color: var(--tertiary);
+    background-color: var(--primary);
   }
 }
+

@@ -1,11 +1,11 @@
-import './Skills.css';
+import './Skills.scss';
 import React from "react";
 import ItemSkill from "../components/ItemSkill";
 
 const Skills = () => {
   return (
     <section className="skills">
-      <h1>Skills</h1>
+      <h1 className="content-title content-title-tertiary">Skills</h1>
       <section className="listskills">
         <ItemSkill imageUrl='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg' imageAlt='Java' />
         <ItemSkill imageUrl='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original-wordmark.svg' imageAlt='Kotlin' />

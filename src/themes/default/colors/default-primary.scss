@@ -1,0 +1,7 @@
+.default-theme {
+  --primary-h: 25;
+  --primary-s: 50%;
+  --primary-l: 95%;
+  --primary-hsl: var(--primary-h), var(--primary-s), var(--primary-l);
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+}

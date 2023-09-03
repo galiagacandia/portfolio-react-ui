@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Navbar from "./components/Navbar";
 import {Route, Routes} from "react-router-dom";
 import AboutMe from "./pages/AboutMe";
@@ -6,14 +6,21 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import IconButton from "./components/IconButton";
 import Skills from "./pages/Skills";
+import {useState} from "react";
 
 function App() {
+  const [theme, setTheme] = useState('default-theme');
+
+  //setTheme(theme === 'default-theme' ? 'dark-theme': 'default-theme')
+
+
   return (
-    <div className="App">
-      <div className="content">
-        <header>
-          <h1>Portfolio</h1>
-          <Navbar/>
+    <div className="App default-theme">
+      <div className="content content-primary">
+        <header className="header header-tertiary">
+          <h1 className="header-title header-title-primary">Portfolio</h1>
+          <Navbar />
+          {/*<Navbar setTheme={setTheme}/>*/}
         </header>
         <Routes>
           <Route path="/" element={<AboutMe/>}/>
@@ -23,7 +30,7 @@ function App() {
         </Routes>
       </div>
       <div className="footer">
-        <footer>
+        <footer className="footer-content footer-content-tertiary">
           <section className="social">
             <ul>
               <li>
