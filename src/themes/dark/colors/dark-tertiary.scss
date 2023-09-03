@@ -1,0 +1,7 @@
+.dark-theme {
+  --tertiary-h: 253;
+  --tertiary-s: 100%;
+  --tertiary-l: 20%;
+  --tertiary-hsl: var(--tertiary-h), var(--tertiary-s), var(--tertiary-l);
+  --tertiary: hsl(var(--tertiary-h), var(--tertiary-s), var(--tertiary-l));
+}

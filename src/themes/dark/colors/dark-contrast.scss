@@ -1,0 +1,7 @@
+.dark-theme {
+  --contrast-h: 204;
+  --contrast-s: 100%;
+  --contrast-l: 61%;
+  --contrast-hsl: var(--contrast-h), var(--contrast-s), var(--contrast-l);
+  --contrast: hsl(var(--contrast-h), var(--contrast-s), var(--contrast-l));
+}

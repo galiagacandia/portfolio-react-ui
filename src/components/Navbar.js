@@ -1,10 +1,14 @@
 import React from "react";
-import './Navbar.css';
+import './Navbar.scss';
 import {NavLink} from "react-router-dom";
+import IconButton from "./IconButton";
 
 const Navbar = () => {
+
+  //const handleSetThemeClick = () => setTheme(target.theme === 'default-theme' ? 'dark-theme': 'default-theme')
+
   return (
-    <nav>
+    <nav className="nav">
       <ul>
         <li>
           <NavLink to="/">About Me</NavLink>
@@ -19,6 +23,9 @@ const Navbar = () => {
           <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
+      {/*<button onClick={handleSetThemeClick}>*/}
+      {/*  <i className='ri-facebook-circle-fill'></i>*/}
+      {/*</button>*/}
     </nav>
   );
 }

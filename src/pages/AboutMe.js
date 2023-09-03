@@ -1,4 +1,4 @@
-import './AboutMe.css';
+import './AboutMe.scss';
 import React from "react";
 const AboutMe = () => {
   return(
